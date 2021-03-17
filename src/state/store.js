@@ -1,15 +1,15 @@
-import React, {createContext, useReducer} from 'react';
+import React, { createContext, useReducer } from 'react';
 import Reducer from './reducer';
 
-let initialState = {
+var initialState = {
     accessToken: '',
     covenants: [],
     covenantData: [],
     httpError: {}
 };
 
-let Store = ({children}) => {
-    let [state, dispatch] = useReducer(Reducer, initialState);
+var Store = ({children}) => {
+    var [state, dispatch] = useReducer(Reducer, initialState);
     return (
         <Context.Provider value={[state, dispatch]}>
             {children}
@@ -17,5 +17,5 @@ let Store = ({children}) => {
     )
 };
 
-export let Context = createContext(initialState);
+export var Context = createContext(initialState);
 export default Store;

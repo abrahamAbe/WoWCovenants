@@ -3,8 +3,9 @@ import axios from 'axios';
 import { Context } from '../state/store';
 
 let useFetchData = (url, actionType) => {
-    
-    let [state, dispatch] = useContext(Context)
+
+    let [state, dispatch] = useContext(Context);
+
     useEffect(() => {
         axios.get(url + state.accessToken)
         .then(response => {

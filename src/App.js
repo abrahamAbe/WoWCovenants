@@ -4,8 +4,7 @@ import { CovenantDetails } from './components/covenantDetails';
 import React, { useContext, useEffect } from 'react';
 import { getOauthToken } from './config/oauth';
 import { Context } from './state/store';
-//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
 
@@ -25,7 +24,7 @@ function App() {
 
   return (
     <div className="app app-header">
-      
+      <Router>
         <Switch>
           {/* home page*/}
           <Route exact path="/">
@@ -37,7 +36,7 @@ function App() {
             { covenantDetails }
           </Route>
         </Switch>
-      
+      </Router>
     </div>
   );
 }

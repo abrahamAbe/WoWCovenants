@@ -30,11 +30,3 @@ let Reducer = (state, action) => {
 };
 
 export default Reducer;
-
-/*
-covenantData: state.covenantData.concat({
-    id: action.payload.id,
-    name: action.payload.name,
-    description: action.payload.description,
-})
-*/

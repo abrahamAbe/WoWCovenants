@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { oauth2Resource } from './endpoints';
+import { oauth2Resource, oauth2UserName, oauth2Password } from './endpoints';
 
 var qs = require('qs');
 
@@ -28,8 +28,8 @@ let url: string = oauth2Resource,
     },
 
     auth: authObject = {
-        username: '615710488e9c453396bf14c9dc495b2b',
-        password: 'LeObAc7UjwmXnVf74008pv0RhQxPN3z4'
+        username: oauth2UserName,
+        password: oauth2Password
     },
 
     options: optionsObject = {
