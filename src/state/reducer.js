@@ -14,9 +14,8 @@ let Reducer = (state, action) => {
             return {
                 ...state,
                 covenantData: {
-                    id: action.payload.id,
-                    name: action.payload.name,
                     description: action.payload.description,
+                    renownRewards: action.payload.renown_rewards
                 }
             };
         case 'SET_HTTP_ERROR':

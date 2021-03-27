@@ -1,10 +1,10 @@
-import React, { createContext, useReducer } from 'react';
+import { createContext, useReducer } from 'react';
 import Reducer from './reducer';
 
 var initialState = {
     accessToken: '',
-    covenants: [],
-    covenantData: [],
+    covenants: null,
+    covenantData: {},
     httpError: {}
 };
 

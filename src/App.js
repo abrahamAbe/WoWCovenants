@@ -1,7 +1,7 @@
-import './css/App.css';
+import './css/app.css';
 import { CovenantsMenu } from './components/covenantsMenu';
 import { CovenantDetails } from './components/covenantDetails';
-import React, { useContext, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { getOauthToken } from './config/oauth';
 import { Context } from './state/store';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -23,15 +23,15 @@ function App() {
       covenantDetails = state.accessToken ? <CovenantDetails /> : null;
 
   return (
-    <div className="app app-header">
+    <div className="main-app-container font-pangolin">
       <Router>
         <Switch>
-          {/* home page*/}
+          {/* covenants menu page */}
           <Route exact path="/">
             { covenants }
           </Route>
 
-          {/* covenant details page*/}
+          {/* covenant details page */}
           <Route path="/details/:id">
             { covenantDetails }
           </Route>

@@ -1,0 +1,26 @@
+.covenant-details-container{
+    padding: 30px;
+}
+
+.covenant-details-description{
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.covenant-details-title{
+    margin-bottom: 30px;
+}
+
+.covenant-details-reward{
+    margin-bottom: 15px;
+}
+
+@layer utilities {
+    @variants responsive {
+      .covenant-details-description-mobile{
+        width: 100%;
+      }
+    }
+}
