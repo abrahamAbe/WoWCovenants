@@ -4,5 +4,6 @@ let covenantsResource1 = 'https://us.api.blizzard.com/data/wow/covenant/',
 let oauth2Resource = 'https://us.battle.net/oauth/token',
     oauth2UserName = '',
     oauth2Password = '';
+    //
 
 export { covenantsResource1, covenantsResource2, oauth2Resource, oauth2UserName, oauth2Password }
