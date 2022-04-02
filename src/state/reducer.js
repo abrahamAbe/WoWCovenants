@@ -4,12 +4,12 @@ let Reducer = (state, action) => {
             return {
                 ...state,
                 accessToken: action.payload.access_token
-            };
+            }
         case 'SET_COVENANTS':
             return {
                 ...state,
                 covenants: action.payload.covenants
-            };
+            }
         case 'SET_COVENANT_DETAILS':
             return {
                 ...state,
@@ -17,14 +17,19 @@ let Reducer = (state, action) => {
                     description: action.payload.description,
                     renownRewards: action.payload.renown_rewards
                 }
-            };
+            }
         case 'SET_HTTP_ERROR':
             return {
                 ...state,
                 httpError: action.payload
-            };
+            }
+        case 'SET_TEST':
+            return {
+                ...state,
+                testing: action.payload
+            }
         default:
-            return state;
+            return state
     }
 };
 
