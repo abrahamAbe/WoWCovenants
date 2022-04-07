@@ -1,10 +1,5 @@
 let Reducer = (state, action) => {
     switch (action.type) {
-        case 'SET_ACCESS_TOKEN':
-            return {
-                ...state,
-                accessToken: action.payload.access_token
-            }
         case 'SET_COVENANTS':
             return {
                 ...state,
@@ -31,6 +26,6 @@ let Reducer = (state, action) => {
         default:
             return state
     }
-};
+}
 
 export default Reducer;

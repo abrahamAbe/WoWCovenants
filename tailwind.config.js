@@ -11,7 +11,7 @@ module.exports = {
             desktop: {'max':'1280px'}
         },
         colors: {
-            backgroundGray: colors.coolGray
+            backgroundGray: colors.blue
         },
         fontFamily: {
             sans: ['Arial'],
